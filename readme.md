@@ -1,4 +1,10 @@
-Great and simple place to start - https://jestjs.io/docs/getting-started
+To run tests -
+
+'npm run test'
+
+Great and simple places to start -
+
+https://jestjs.io/docs/getting-started
 
 https://simplecheatsheet.com/tag/jest-cheat-sheet/
 
