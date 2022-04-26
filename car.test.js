@@ -10,6 +10,12 @@ test("Testing of car names are expected", () => {
     expect(car3.make).toBe("Toyota");
 });
 
+test("Testing of car names are expected", () => {
+    expect(car1.make).toBe("Volkswagen");
+    expect(car2.make).toBe("Honda");
+    expect(car3.make).toBe("Toyota");
+});
+
 test("Testing of car name is a string", () => {
     expect(typeof car1.make).toBe("string");
     expect(typeof car2.make).toBe("string");
