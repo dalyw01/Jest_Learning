@@ -1,4 +1,4 @@
-const myModule = require("./derp");
+const myModule = require("./fooBarClass");
 
 describe("myModule", () => {
   

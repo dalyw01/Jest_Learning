@@ -1,4 +1,4 @@
-const x = require("./car");
+const x = require("./carClass");
 
 const car1 = new x.Car("Volkswagen" , "Golf"  , 1993 , true);
 const car2 = new x.Car("Honda"      , "Civic" , 1993 , true);
