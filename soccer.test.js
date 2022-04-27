@@ -11,9 +11,13 @@ test("Test : Spit out all the home teams and verify they are strings", () =>
                 console.log(k1 + "<->" + v1);
                 expect(v1).toBeTruthy();
                 expect(typeof v1).toBe("string");
-                expect(v1).not.toMatch("Fulham");
-                // expect(v1).toBeGreaterThanOrEqual(5);
-                // expect(v1).toBeLessThan(12);
+                expect(v1).not.toMatch("Derby");
+            }
+            if(k1 == "RoundNumber")
+            {
+                console.log(k1 + "<->" + v1);
+                expect(v1).toBeGreaterThanOrEqual(1);
+                expect(v1).toBeLessThan(39);
             }
         }
     }
