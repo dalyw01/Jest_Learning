@@ -7,8 +7,8 @@ const shoppingList = [
   ];
   
 test('The shopping list has milk', () => {
-  expect(shoppingList).toContain('milk');
-  expect(new Set(shoppingList)).toContain('milk');
+    expect(shoppingList).toContain('milk');
+    expect(new Set(shoppingList)).toContain('milk');
 });
 
 test('A cheat sheet with some other small examples', () => {
@@ -21,5 +21,5 @@ test('A cheat sheet with some other small examples', () => {
 
 
 test('A cheat sheet with some other small examples', () => {
-  expect(['pizza', 'coffee']).toEqual([expect.stringContaining('zz'), expect.stringMatching(/ff/)])
+expect(['pizza', 'coffee']).toEqual([expect.stringContaining('zz'), expect.stringMatching(/ff/)])
 });
