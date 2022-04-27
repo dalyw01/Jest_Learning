@@ -19,7 +19,6 @@ test('A cheat sheet with some other small examples', () => {
   expect(['Alice', 'Bob', 'Eve']).toEqual(expect.arrayContaining(['Alice', 'Bob']))
 });
 
-
 test('A cheat sheet with some other small examples', () => {
-expect(['pizza', 'coffee']).toEqual([expect.stringContaining('zz'), expect.stringMatching(/ff/)])
+  expect(['pizza', 'coffee']).toEqual([expect.stringContaining('zz'), expect.stringMatching(/ff/)])
 });
