@@ -20,15 +20,22 @@ test("Test : Interrogate properties of this JSON feed", () =>
         {
             if(k1 == "HomeTeam" || k1 == "AwayTeam" || k1 == "Location")
             {
-                expect(v1).toBeTruthy();
+                expect(v1).toBeTruthy(); // (not false, 0, ”, null, undefined, NaN)
                 expect(typeof v1).toBe("string"); // .toBe method tests for exact (===) equality
                 expect(v1).not.toMatch("Derby");
             }
-            if(k1 == "HomeTeamScore" || k1 == "AwayTeamScore")
+            else if( (k1 == "HomeTeamScore" && v1 != null) || (k1 == "AwayTeamScore" && v1 != null))
             {
-                //expect(typeof v1).toBe("number");
-                // expect(v1).toBeGreaterThanOrEqual(-1);
-                // expect(v1).toBeLessThan(39);
+                console.log(k1 + "<->" + v1);
+                expect(typeof v1).toBe("number"); 
+                expect(v1).toBeGreaterThanOrEqual(-1);
+                expect(v1).toBeLessThan(39);
+                expect(2).toBeGreaterThan(1)
+                expect(1).toBeGreaterThanOrEqual(1)
+                expect(1).toBeLessThan(2)
+                expect(1).toBeLessThanOrEqual(1)
+                expect(0.2 + 0.1).toBeCloseTo(0.3, 5) // Still need to understand this better 
+                expect(v1).toEqual(expect.any(Number))
             }
             else if(k1 == "RoundNumber")
             {
